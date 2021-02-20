@@ -273,8 +273,22 @@ section{
   color: white;
 }
 
+.contact-info div h3{
+  color: #fce138;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
 
+.contact-info div p, .contact-info div address{
+  line-height: 1.5;
+  font-size: 20px;
+  margin: 20px 0;
+  font-style: normal;
+}
 
+.contact-info div address a{
+  color: #fce138;
+}
 
 
 
