@@ -65,6 +65,14 @@ header nav ul li a{
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+/*Psuedo class for hover on the link */
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
 footer{
   background-color: #fce138;
   width : 100%;
@@ -162,6 +170,15 @@ section{
   width: 100%;
   margin-bottom: 15px;
   border-radius: 10px;
+  /* form input's default state slightly transparent */
+  background-color: rgba(255,255,255, 0.75);
+}
+
+/* Psuedo-code that  switches to full opaqueness when the input is in focus */
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  /* remove the blue border that appear when clicked on the text box */
+  outline: none;
 }
 
 .hero-form label{
@@ -177,6 +194,12 @@ section{
    /*round corners*/
    border-radius: 10px;
 }
+
+/* Psuedo-class for hover on the button */
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
+
 /*Hero style end */
 
 /*common styling for <h2> element */
@@ -226,6 +249,10 @@ section{
    align-items: center;
    flex-wrap: wrap;
 
+}
+/* Psuedo-class the will make a border only appears under the last step */
+.step:last-child {
+  border-bottom: none;
 }
 
 .step-info{
@@ -384,6 +411,11 @@ section{
   border-radius: 10px;
 
 }
+/* Psuedo-code class for the form */
+.contact-form input:focus, .contact-form textarea:focus{
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
 
 .contact-form button{
   width: 100%;
@@ -395,6 +427,10 @@ section{
   font-size: 16px;
    /*round corners*/
    border-radius: 10px;
-
 }
 
+/* Psuedo-class for hover over button */
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
